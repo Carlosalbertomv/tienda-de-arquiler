@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #eee;
+}
+
+.cv-contenedor {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.panel1 {
+  width: 35%;
+  background: rgb(3, 1, 143);
+  padding: 30px;
+  box-sizing: border-box;
+  border-right: 2px solid #ddd;
+}
+
+.panel1 .foto {
+  width: 60%;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.panel1 h2 {
+  font-size: 16px;
+  margin-top: 20px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.panel1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+.panel1 ul li {
+  margin-bottom: 8px;
+  color: white;
+}
+
+.correo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.correo a:hover {
+  color: blue;
+}
+
+.panel2 {
+  width: 65%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.panel2 h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.panel2 h3 {
+  font-weight: normal;
+  color: #555;
+  margin-top: 0;
+}
+
+.perfil {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+section {
+  margin-top: 30px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+}
+
+.experiencia {
+  margin-bottom: 20px;
+}
+
+.experiencia h3 {
+  margin-bottom: 5px;
+}
+
+.experiencia ul {
+  padding-left: 20px;
+}
+
+/* Estilos RESPONSIVOS */
+@media (max-width: 768px) {
+  .cv-contenedor {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .panel1,
+  .panel2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .panel1 {
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .panel1 .foto {
+    width: 70%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 25px;
+  }
+
+  .panel2 h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 16px;
+  }
+
+  .perfil {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel2 {
+    padding: 15px;
+  }
+
+  .panel1 {
+    padding: 15px;
+  }
+
+  .panel2 h1 {
+    font-size: 20px;
+  }
+
+  .panel2 h3, .panel1 h2 {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 14px;
+  }
+
+  .perfil {
+    font-size: 12px;
+  }
+}
